@@ -12,4 +12,7 @@ https://github.com/carla-simulator/carla/issues/1466#issuecomment-522797557
 TODO: back up Python 3.8.12 environment to carla-simulator3.yml and carla-simulator3-2022-03-09-1352.yml
 
 3/10/2022 10:00 PM: downgrade from Python 3.8.12 to 3.7.11 complete
+
 3/10/2022 10:02 PM: successfully installed carla python module (https://github.com/carla-simulator/carla/issues/1466#issuecomment-522797557) for generate_traffic.py script
+
+3/10/2022 10:13 PM: created environments directory; backed up Python 3.7.11 environment to carla-simulator3-2022-03-10-2210.yml
