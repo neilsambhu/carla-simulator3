@@ -2,8 +2,8 @@
 #/CARLA_0.9.13/*
 
 *
-!/environments
+!./environments
 !README.md
 !.gitignore
-!/CARLA_0.9.13/PythonAPI/examples/*.py
-!/CARLA_0.9.13/PythonAPI/examples/*.txt
+!./CARLA_0.9.13/PythonAPI/examples/*.py
+!./CARLA_0.9.13/PythonAPI/examples/*.txt
