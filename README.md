@@ -42,3 +42,14 @@ Traceback (most recent call last):
     tfd = tf.contrib.distributions
 AttributeError: module 'tensorflow' has no attribute 'contrib'
 ```
+3/24/2022 5:53:33 PM:
+```(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/scenario_runner$ python -V
+Python 3.7.11
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/scenario_runner$ python
+Python 3.7.11 (default, Jul 27 2021, 14:32:16) 
+[GCC 7.5.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+>>> print(tf.__version__)
+2.8.0
+```
