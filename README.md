@@ -55,3 +55,18 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> print(tf.__version__)
 2.8.0
 ```
+3/24/2022 6:22:11 PM: 
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/scenario_runner$ conda list agents
+# packages in environment at /home/nsambhu/anaconda3/envs/carla-simulator3:
+#
+# Name                    Version                   Build  Channel
+agents                    1.4.0                    pypi_0    pypi
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/scenario_runner$ conda remove agents
+Collecting package metadata (repodata.json): done
+Solving environment: failed
+
+PackagesNotFoundError: The following packages are missing from the target environment:
+  - agents
+```
+copied (1) /home/nsambhu/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/carla/agents to (2) /home/nsambhu/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics
