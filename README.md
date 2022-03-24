@@ -20,7 +20,8 @@ TODO: back up Python 3.8.12 environment to carla-simulator3.yml and carla-simula
 3/10/2022 10:31 PM: CARLA 0.9.13 autopilot is jerky for cars with multiple gears. Tesla Cybertruck is smoother than the gas car. Autopilot drives very slowly. SDC stops abruptly when approaching a car from behind, regardless of initial following distance: I see the SDC jerk back after every full stop.
 
 3/24/2022 5:34 PM: 
-```(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
 Traceback (most recent call last):
   File "scenario_runner.py", line 35, in <module>
     from srunner.scenarioconfigs.openscenario_configuration import OpenScenarioConfiguration
@@ -43,7 +44,8 @@ Traceback (most recent call last):
 AttributeError: module 'tensorflow' has no attribute 'contrib'
 ```
 3/24/2022 5:53:33 PM:
-```(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/scenario_runner$ python -V
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/scenario_runner$ python -V
 Python 3.7.11
 (carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/scenario_runner$ python
 Python 3.7.11 (default, Jul 27 2021, 14:32:16) 
