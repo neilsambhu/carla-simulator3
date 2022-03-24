@@ -70,3 +70,5 @@ PackagesNotFoundError: The following packages are missing from the target enviro
   - agents
 ```
 copied (1) /home/nsambhu/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/carla/agents to (2) /home/nsambhu/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics
+
+AttributeError persists.
