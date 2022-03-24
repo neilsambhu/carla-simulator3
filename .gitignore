@@ -7,3 +7,4 @@
 !.gitignore
 !./CARLA_0.9.13/PythonAPI/examples/*.py
 !./CARLA_0.9.13/PythonAPI/examples/*.txt
+!./scenario_runner/*.py
