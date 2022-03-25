@@ -72,6 +72,7 @@ PackagesNotFoundError: The following packages are missing from the target enviro
 copied (1) /home/nsambhu/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/carla/agents to (2) /home/nsambhu/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics
 
 AttributeError persists.
+
 3/25/2022 11:51:58 AM: Create environment from *.yml:
 ```
 conda create --name bio-env --file bio-env.yml
