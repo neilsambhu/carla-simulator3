@@ -109,4 +109,17 @@ Traceback (most recent call last):
     import ephem
 ModuleNotFoundError: No module named 'ephem'
 ```
-text
+3/25/2022 2:26:22 PM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+Traceback (most recent call last):
+  File "scenario_runner.py", line 35, in <module>
+    from srunner.scenarioconfigs.openscenario_configuration import OpenScenarioConfiguration
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarioconfigs/openscenario_configuration.py", line 24, in <module>
+    from srunner.tools.openscenario_parser import OpenScenarioParser, ParameterRef
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/tools/openscenario_parser.py", line 26, in <module>
+    from srunner.scenariomanager.scenarioatomics.atomic_behaviors import (TrafficLightStateSetter,
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics/atomic_behaviors.py", line 29, in <module>
+    import networkx
+ModuleNotFoundError: No module named 'networkx'
+```
