@@ -143,4 +143,9 @@ Traceback (most recent call last):
     from agents.navigation.basic_agent import BasicAgent
 ModuleNotFoundError: No module named 'agents'
 ```
-text
+3/25/2022 2:33:28 PM: in /data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics, rename "agents" to ".agents"
+
+3/25/2022 2:50:00 PM: carla-simulator3 environment is setup for scenario_runner; back up environment to carla-simulator3-2022-03-25-1450.yml
+```
+conda env export > environments/carla-simulator3-2022-03-25-1450.yml
+```
