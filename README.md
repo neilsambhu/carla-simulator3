@@ -81,6 +81,12 @@ conda create --name bio-env --file bio-env.yml
 ```
 conda install --file requirements.txt
 ```
+```
+  - xmlschema==1.0.18
+  - simple-watchdog-timer
+  - py-trees==0.8.3
+  - opencv-python==4.2.0.32
+```
 3/25/2022 2:23:07 PM: 
 ```
 (carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
