@@ -81,3 +81,32 @@ conda create --name bio-env --file bio-env.yml
 ```
 conda install --file requirements.txt
 ```
+3/25/2022 2:23:07 PM: 
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+Traceback (most recent call last):
+  File "scenario_runner.py", line 33, in <module>
+    import carla
+ModuleNotFoundError: No module named 'carla'
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ pip3 install carla
+Collecting carla
+  Downloading carla-0.9.13-cp37-cp37m-manylinux_2_27_x86_64.whl (29.7 MB)
+     |████████████████████████████████| 29.7 MB 7.3 MB/s 
+Installing collected packages: carla
+Successfully installed carla-0.9.13
+```
+3/25/2022 2:23:48 PM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+Traceback (most recent call last):
+  File "scenario_runner.py", line 35, in <module>
+    from srunner.scenarioconfigs.openscenario_configuration import OpenScenarioConfiguration
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarioconfigs/openscenario_configuration.py", line 24, in <module>
+    from srunner.tools.openscenario_parser import OpenScenarioParser, ParameterRef
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/tools/openscenario_parser.py", line 25, in <module>
+    from srunner.scenariomanager.weather_sim import Weather
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/weather_sim.py", line 18, in <module>
+    import ephem
+ModuleNotFoundError: No module named 'ephem'
+```
+text
