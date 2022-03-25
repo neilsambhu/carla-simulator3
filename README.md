@@ -77,3 +77,7 @@ AttributeError persists.
 ```
 conda create --name bio-env --file bio-env.yml
 ```
+3/25/2022 2:09:05 PM: install from requirements file:
+```
+conda install --file requirements.txt
+```
