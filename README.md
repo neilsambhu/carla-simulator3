@@ -149,3 +149,4 @@ ModuleNotFoundError: No module named 'agents'
 ```
 conda env export > environments/carla-simulator3-2022-03-25-1450.yml
 ```
+3/27/2022 11:50 AM: atomic_behaviors.py imports relative to the scenarioatomics directory. The current working directory when calling atomic_behaviors.py is the scenario_runner directory. 
