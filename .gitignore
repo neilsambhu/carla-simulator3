@@ -5,6 +5,8 @@
 !./environments/*
 !README.md
 !.gitignore
+# !*.py
 !./CARLA_0.9.13/PythonAPI/examples/*.py
 !./CARLA_0.9.13/PythonAPI/examples/*.txt
 !./scenario_runner/*.py
+!./scenario_runner/srunner/scenariomanager/scenarioatomics/atomic_behaviors.py
