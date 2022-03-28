@@ -150,3 +150,22 @@ ModuleNotFoundError: No module named 'agents'
 conda env export > environments/carla-simulator3-2022-03-25-1450.yml
 ```
 3/27/2022 11:50 AM: atomic_behaviors.py imports relative to the scenarioatomics directory. The current working directory when calling atomic_behaviors.py is the scenario_runner directory. 
+
+3/27/2022 10:49:42 PM: working on imports for atomic_behaviors.py
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+scenario_runner directory /data/data1/GitHub/carla-simulator3/scenario_runner
+carla directory /data/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/carla
+carla directory /data/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/carla
+press enter to continue
+Traceback (most recent call last):
+  File "scenario_runner.py", line 35, in <module>
+    from srunner.scenarioconfigs.openscenario_configuration import OpenScenarioConfiguration
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarioconfigs/openscenario_configuration.py", line 24, in <module>
+    from srunner.tools.openscenario_parser import OpenScenarioParser, ParameterRef
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/tools/openscenario_parser.py", line 26, in <module>
+    from srunner.scenariomanager.scenarioatomics.atomic_behaviors import (TrafficLightStateSetter,
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics/atomic_behaviors.py", line 46, in <module>
+    from agents.navigation.basic_agent import BasicAgent
+ModuleNotFoundError: No module named 'agents'
+```

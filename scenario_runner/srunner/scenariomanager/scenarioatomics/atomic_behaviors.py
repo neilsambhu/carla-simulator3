@@ -41,7 +41,7 @@ if verbose:
 os.chdir(path_carla)
 if verbose:
     print('carla directory',os.getcwd())
-    input('press any key to continue')
+    input('press enter to continue')
 # finish imports
 from agents.navigation.basic_agent import BasicAgent
 from agents.navigation.local_planner import RoadOption, LocalPlanner
