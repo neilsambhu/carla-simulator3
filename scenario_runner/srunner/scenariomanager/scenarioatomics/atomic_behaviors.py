@@ -29,9 +29,20 @@ from py_trees.blackboard import Blackboard
 import networkx
 
 import carla
+# get current working directory of scenario_runner.py
+verbose = True
 dir_scenario_runner = os.getcwd()
-path_scenarioatomics
-from neil_example_script import BasicAgent
+if verbose:
+    print('scenario_runner directory', dir_scenario_runner)
+path_carla = '/data/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/carla'
+if verbose:
+    print('carla directory',path_carla)
+# change directory to carla
+os.chdir(path_carla)
+if verbose:
+    print('carla directory',os.getcwd())
+    input('press any key to continue')
+# finish imports
 from agents.navigation.basic_agent import BasicAgent
 from agents.navigation.local_planner import RoadOption, LocalPlanner
 from agents.navigation.global_route_planner import GlobalRoutePlanner
