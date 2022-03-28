@@ -169,3 +169,42 @@ Traceback (most recent call last):
     from agents.navigation.basic_agent import BasicAgent
 ModuleNotFoundError: No module named 'agents'
 ```
+3/28/2022 9:48:31 AM: working on imports for atomic_behaviors.py
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+scenario_runner directory /data/data1/GitHub/carla-simulator3/scenario_runner
+carla directory /data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics
+carla directory /data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics
+agents  atomic_behaviors.py  atomic_criteria.py  atomic_trigger_conditions.py  __init__.py  neil_script.py  __pycache__
+Traceback (most recent call last):
+  File "scenario_runner.py", line 35, in <module>
+    from srunner.scenarioconfigs.openscenario_configuration import OpenScenarioConfiguration
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarioconfigs/openscenario_configuration.py", line 24, in <module>
+    from srunner.tools.openscenario_parser import OpenScenarioParser, ParameterRef
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/tools/openscenario_parser.py", line 26, in <module>
+    from srunner.scenariomanager.scenarioatomics.atomic_behaviors import (TrafficLightStateSetter,
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics/atomic_behaviors.py", line 51, in <module>
+    from .agents.navigation.basic_agent import BasicAgent
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics/agents/navigation/basic_agent.py", line 16, in <module>
+    from agents.navigation.local_planner import LocalPlanner
+ModuleNotFoundError: No module named 'agents'
+```
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+scenario_runner directory /data/data1/GitHub/carla-simulator3/scenario_runner
+carla directory /data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics
+carla directory /data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics
+agents  atomic_behaviors.py  atomic_criteria.py  atomic_trigger_conditions.py  __init__.py  neil_script.py  __pycache__
+Traceback (most recent call last):
+  File "scenario_runner.py", line 35, in <module>
+    from srunner.scenarioconfigs.openscenario_configuration import OpenScenarioConfiguration
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarioconfigs/openscenario_configuration.py", line 24, in <module>
+    from srunner.tools.openscenario_parser import OpenScenarioParser, ParameterRef
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/tools/openscenario_parser.py", line 26, in <module>
+    from srunner.scenariomanager.scenarioatomics.atomic_behaviors import (TrafficLightStateSetter,
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics/atomic_behaviors.py", line 51, in <module>
+    from .agents.navigation.basic_agent import BasicAgent
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics/agents/navigation/basic_agent.py", line 16, in <module>
+    from .agents.navigation.local_planner import LocalPlanner
+ModuleNotFoundError: No module named 'srunner.scenariomanager.scenarioatomics.agents.navigation.agents'
+```

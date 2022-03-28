@@ -35,15 +35,20 @@ dir_scenario_runner = os.getcwd()
 if verbose:
     print('scenario_runner directory', dir_scenario_runner)
 path_carla = '/data/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/carla'
+path_scenarioatomics = '/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics'
 if verbose:
-    print('carla directory',path_carla)
+    print('carla directory',path_scenarioatomics)
 # change directory to carla
-os.chdir(path_carla)
+os.chdir(path_scenarioatomics)
 if verbose:
     print('carla directory',os.getcwd())
-    input('press enter to continue')
 # finish imports
-from agents.navigation.basic_agent import BasicAgent
+if verbose:
+    os.system('ls')
+    # input('press enter to continue')
+# from .neil_script import BasicAgent
+
+from .agents.navigation.basic_agent import BasicAgent
 from agents.navigation.local_planner import RoadOption, LocalPlanner
 from agents.navigation.global_route_planner import GlobalRoutePlanner
 from agents.tools.misc import is_within_distance
