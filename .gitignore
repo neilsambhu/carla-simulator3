@@ -1,13 +1,17 @@
 #commented out 3/17/2022 6:16 PM 
 #/CARLA_0.9.13/*
 
-*
-!*.yml
-!*.py
+./*
+# !**.yml
+# !scenario_runner/**/*.py
 !README.md
 !.gitignore
-# !./environments/*
+
+!./environments/*
+# !./*.py
 # !./CARLA_0.9.13/PythonAPI/examples/*.py
 # !./CARLA_0.9.13/PythonAPI/examples/*.txt
 # !./scenario_runner/*.py
-# !./scenario_runner/srunner/scenariomanager/scenarioatomics/atomic_behaviors.py
+!./scenario_runner/srunner/scenariomanager/scenarioatomics/atomic_behaviors.py
+
+# https://www.atlassian.com/git/tutorials/saving-changes/gitignore > "you can not negate a file that is ignored due to a pattern matching a directory"
