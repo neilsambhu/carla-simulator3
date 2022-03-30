@@ -339,4 +339,8 @@ Traceback (most recent call last):
     world = client.get_world()
 RuntimeError: time-out of 10000ms while waiting for the simulator, make sure the simulator is ready and connected to 127.0.0.1:2000
 ```
-3/30/2022 1:49:15 PM: potential solution: https://stackoverflow.com/questions/22656359/bash-shell-script-opening-multiple-terminals-and-executing-distinct-commands TODO: 'screen' in bash script
+3/30/2022 1:49:15 PM: potential solution: https://stackoverflow.com/questions/22656359/bash-shell-script-opening-multiple-terminals-and-executing-distinct-commands 
+
+3/30/2022 1:52:12 PM: TODO: 'screen' in bash script
+
+3/30/2022 2:17:47 PM: instead of "screen," use "tmux": https://tmuxcheatsheet.com/
