@@ -308,3 +308,35 @@ No more scenarios .... Exiting
 Configuration for scenario 00_scenario_name cannot be found!
 No more scenarios .... Exiting
 ```
+3/30/2022 1:07:45 PM: writing script to call CarlaUE4.sh, generate_traffic.py, dynamic_weather.py, manual_control.py
+
+3/30/2022 1:40:21 PM: Python Popen (failed)
+```
+(base) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3$ python neil_script.py 
+(base) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3$ 4.26.2-0+++UE4+Release-4.26 522 0
+Disabling core dumps.
+LowLevelFatalError [File:Unknown] [Line: 136] 
+Exception thrown: bind: Address already in use
+Signal 11 caught.
+Malloc Size=65538 LargeMemoryPoolOffset=65554 
+CommonUnixCrashHandler: Signal=11
+Malloc Size=131160 LargeMemoryPoolOffset=196744 
+Malloc Size=131160 LargeMemoryPoolOffset=327928 
+Engine crash handling finished; re-raising signal 11 for the default handler. Good bye.
+Segmentation fault (core dumped)
+ERROR conda.cli.main_run:execute(33): Subprocess for 'conda run ['python', '/data/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/examples/generate_traffic.py']' command failed.  (See above for error)
+
+destroying 0 vehicles
+
+destroying 0 walkers
+
+done.
+
+Traceback (most recent call last):
+  File "/data/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/examples/generate_traffic.py", line 377, in <module>
+    main()
+  File "/data/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/examples/generate_traffic.py", line 165, in main
+    world = client.get_world()
+RuntimeError: time-out of 10000ms while waiting for the simulator, make sure the simulator is ready and connected to 127.0.0.1:2000
+```
+3/30/2022 1:49:15 PM: potential solution: https://stackoverflow.com/questions/22656359/bash-shell-script-opening-multiple-terminals-and-executing-distinct-commands TODO: 'screen' in bash script
