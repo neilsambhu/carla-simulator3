@@ -274,3 +274,23 @@ Traceback (most recent call last):
     from ....neil_script import BasicAgent
 ValueError: attempted relative import beyond top-level package
 ```
+3/29/2022 10:35:55 PM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+scenario_runner directory /data/data1/GitHub/carla-simulator3/scenario_runner
+CARLA_VER   Docs   LICENSE      metrics_manager.py  no_rendering_mode.py  recording_files scenario_runner.py
+Dockerfile  Jenkinsfile  manual_control.py  mkdocs.yml    README.md       requirements.txt  srunner
+Traceback (most recent call last):
+  File "scenario_runner.py", line 37, in <module>
+    from srunner.scenariomanager.scenario_manager import ScenarioManager
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenario_manager.py", line 21, in <module>
+    from srunner.scenariomanager.result_writer import ResultOutputProvider
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/result_writer.py", line 17, in <module>
+    from tabulate import tabulate
+ModuleNotFoundError: No module named 'tabulate'
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ pip install tabulate
+Collecting tabulate
+  Downloading tabulate-0.8.9-py3-none-any.whl (25 kB)
+Installing collected packages: tabulate
+Successfully installed tabulate-0.8.9
+```

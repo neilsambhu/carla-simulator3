@@ -49,10 +49,11 @@ if verbose:
 if verbose:
     os.system('ls')
     # input('press enter to continue')
-# from .neil_script import BasicAgent
-#bad way to import because import is absolute and not relative
-# sys.path.insert(0, path_carla) 
-from ....neil_script import BasicAgent
+import sys
+# bad way to import because import is absolute and not relative
+sys.path.insert(0, path_carla) 
+# ValueError: attempted relative import beyond top-level package
+# from ....neil_script import BasicAgent
 
 from agents.navigation.basic_agent import BasicAgent
 from agents.navigation.local_planner import RoadOption, LocalPlanner
