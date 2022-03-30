@@ -30,7 +30,7 @@ import networkx
 
 import carla
 # get current working directory of scenario_runner.py
-verbose = True
+verbose = False
 dir_scenario_runner = os.getcwd()
 if verbose:
     print('scenario_runner directory', dir_scenario_runner)

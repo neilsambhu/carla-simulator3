@@ -294,3 +294,9 @@ Collecting tabulate
 Installing collected packages: tabulate
 Successfully installed tabulate-0.8.9
 ```
+3/29/2022 10:39:04 PM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+Configuration for scenario 00_scenario_name cannot be found!
+No more scenarios .... Exiting
+```
