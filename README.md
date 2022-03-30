@@ -300,3 +300,11 @@ Successfully installed tabulate-0.8.9
 Configuration for scenario 00_scenario_name cannot be found!
 No more scenarios .... Exiting
 ```
+3/30/2022 11:21:35 AM: removed "." from import in basic_agent.py
+
+3/30/2022 11:22:28 AM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+Configuration for scenario 00_scenario_name cannot be found!
+No more scenarios .... Exiting
+```
