@@ -30,24 +30,28 @@ import networkx
 
 import carla
 # get current working directory of scenario_runner.py
-verbose = False
+verbose = True
 dir_scenario_runner = os.getcwd()
 if verbose:
-    print('scenario_runner directory', dir_scenario_runner)
+    # print('scenario_runner directory', dir_scenario_runner)
 path_carla = '/data/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/carla'
-path_scenarioatomics = '/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics'
+# path_scenarioatomics = '/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics'
 if verbose:
-    print('carla directory',path_scenarioatomics)
+    # print('carla directory',path_scenarioatomics)
+    pass
 # change directory to carla
 # os.chdir(path_scenarioatomics)
 if verbose:
-    print('carla directory',os.getcwd())
+    # print('carla directory',os.getcwd())
+    pass
 # finish imports
 if verbose:
     os.system('ls')
     # input('press enter to continue')
 # from .neil_script import BasicAgent
-sys.path.insert(0, path_carla)
+#bad way to import because import is absolute and not relative
+# sys.path.insert(0, path_carla) 
+import srunner.scenariomanager.scenarioatomics.neil_script
 
 from agents.navigation.basic_agent import BasicAgent
 from agents.navigation.local_planner import RoadOption, LocalPlanner

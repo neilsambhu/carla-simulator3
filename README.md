@@ -209,3 +209,21 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'srunner.scenariomanager.scenarioatomics.agents.navigation.agents'
 ```
 3/28/2022 8:50:41 PM: https://www.geeksforgeeks.org/python-import-module-from-different-directory/ In atomic_behaviors.py, add agents directory to Python system path.
+
+3/29/2022 9:36:58 PM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+scenario_runner directory /data/data1/GitHub/carla-simulator3/scenario_runner
+CARLA_VER   Docs   LICENSE      metrics_manager.py  no_rendering_mode.py  recording_files scenario_runner.py
+Dockerfile  Jenkinsfile  manual_control.py  mkdocs.yml    README.md       requirements.txt  srunner
+Traceback (most recent call last):
+  File "scenario_runner.py", line 35, in <module>
+    from srunner.scenarioconfigs.openscenario_configuration import OpenScenarioConfiguration
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarioconfigs/openscenario_configuration.py", line 24, in <module>
+    from srunner.tools.openscenario_parser import OpenScenarioParser, ParameterRef
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/tools/openscenario_parser.py", line 26, in <module>
+    from srunner.scenariomanager.scenarioatomics.atomic_behaviors import (TrafficLightStateSetter,
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics/atomic_behaviors.py", line 54, in <module>
+    import neil_script
+ModuleNotFoundError: No module named 'neil_script'
+```
