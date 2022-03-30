@@ -344,3 +344,9 @@ RuntimeError: time-out of 10000ms while waiting for the simulator, make sure the
 3/30/2022 1:52:12 PM: TODO: 'screen' in bash script
 
 3/30/2022 2:17:47 PM: instead of "screen," use "tmux": https://tmuxcheatsheet.com/
+
+3/30/2022 2:42:49 PM: tmux (1) does not allow detaching from command line and (2) pyautogui does not detach with shortcut keys; tangentially, the "ls" command within the tmux, called from the Python script does not work: there is unintelligible output.
+
+3/30/2022 2:45:35 PM: can bash script switch tmux sessions? 
+
+3/30/2022 2:56:04 PM: xdotool allows keyboard presses

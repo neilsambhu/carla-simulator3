@@ -8,3 +8,6 @@ import subprocess,os
 
 tmux = 'tmux'
 subprocess.Popen(tmux)
+subprocess.Popen('pwd')
+import pyautogui
+pyautogui.hotkey('ctrl', 'b', 'd')
