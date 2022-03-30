@@ -33,7 +33,8 @@ import carla
 verbose = True
 dir_scenario_runner = os.getcwd()
 if verbose:
-    # print('scenario_runner directory', dir_scenario_runner)
+    print('scenario_runner directory', dir_scenario_runner)
+    pass
 path_carla = '/data/data1/GitHub/carla-simulator3/CARLA_0.9.13/PythonAPI/carla'
 # path_scenarioatomics = '/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenariomanager/scenarioatomics'
 if verbose:
@@ -51,7 +52,7 @@ if verbose:
 # from .neil_script import BasicAgent
 #bad way to import because import is absolute and not relative
 # sys.path.insert(0, path_carla) 
-import srunner.scenariomanager.scenarioatomics.neil_script
+from ....neil_script import BasicAgent
 
 from agents.navigation.basic_agent import BasicAgent
 from agents.navigation.local_planner import RoadOption, LocalPlanner
