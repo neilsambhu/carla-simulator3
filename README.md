@@ -350,3 +350,12 @@ RuntimeError: time-out of 10000ms while waiting for the simulator, make sure the
 3/30/2022 2:45:35 PM: can bash script switch tmux sessions? 
 
 3/30/2022 2:56:04 PM: xdotool allows keyboard presses
+
+3/30/2022 4:23:09 PM: paused "writing script to call CarlaUE4.sh, generate_traffic.py, dynamic_weather.py, manual_control.py"
+
+3/30/2022 4:28:32 PM: with CARLA simulator running, scenario_runner.py configuration error persists
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 00_scenario_name --record recording_files
+Configuration for scenario 00_scenario_name cannot be found!
+No more scenarios .... Exiting
+```
