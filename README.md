@@ -456,3 +456,4 @@ No more scenarios .... Exiting
 
 3/31/2022 11:32:48 AM: scenarios on hard disk: /data/data1/GitHub/carla-simulator3/scenario_runner/srunner/examples/\*.xml
 
+3/31/2022 11:47:29 AM: error from 3/31/2022 11:16:49 AM; TODO: change map in CARLA
