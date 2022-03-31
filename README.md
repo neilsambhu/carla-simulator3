@@ -454,4 +454,5 @@ No more scenarios .... Exiting
 ```
 3/31/2022 11:18:13 AM: list of scenarios: https://github.com/carla-simulator/scenario_runner/blob/master/Docs/list_of_scenarios.md
 
-3/31/2022 11:32:48 AM: scenarios on hard disk: /data/data1/GitHub/carla-simulator3/scenario_runner/srunner/examples/*.xml
+3/31/2022 11:32:48 AM: scenarios on hard disk: /data/data1/GitHub/carla-simulator3/scenario_runner/srunner/examples/\*.xml
+
