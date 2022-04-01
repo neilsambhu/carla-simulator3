@@ -559,3 +559,117 @@ The CARLA server uses the wrong map: Town10HD_Opt
 This scenario requires to use map: Town01
 No more scenarios .... Exiting
 ```
+4/1/2022 11:59:12 AM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 400, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 224
+ERROR: failed to destroy actor 224 : unable to destroy actor: not found 
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 400, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 399
+ERROR: failed to destroy actor 399 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+4/1/2022 12:02:12 PM: opened CARLA simulator window; error from 4/1/2022 11:59:12 AM persists. manual_control.py shows Town01.
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml 
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 400, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 803
+ERROR: failed to destroy actor 803 : unable to destroy actor: not found 
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 400, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 805
+ERROR: failed to destroy actor 805 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 400, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 980
+ERROR: failed to destroy actor 980 : unable to destroy actor: not found 
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 400, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 1155
+ERROR: failed to destroy actor 1155 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+4/1/2022 12:06:50 PM: start CARLA simulator > manual_control.py > python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml 
+The CARLA server uses the wrong map: Town10HD_Opt
+This scenario requires to use map: Town01
+The CARLA server uses the wrong map: Town10HD_Opt
+This scenario requires to use map: Town01
+No more scenarios .... Exiting
+```
+4/1/2022 12:08:56 PM: start CARLA simulator > manual_control.py > ...
