@@ -305,6 +305,8 @@ class ScenarioRunner(object):
 
         if self._args.reloadWorld:
             self.world = self.client.load_world(town)
+            # print('Neil')
+            print(self.client.get_available_maps())
         else:
             # if the world should not be reloaded, wait at least until all ego vehicles are ready
             ego_vehicle_found = False

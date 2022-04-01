@@ -457,3 +457,49 @@ No more scenarios .... Exiting
 3/31/2022 11:32:48 AM: scenarios on hard disk: /data/data1/GitHub/carla-simulator3/scenario_runner/srunner/examples/\*.xml
 
 3/31/2022 11:47:29 AM: error from 3/31/2022 11:16:49 AM; TODO: change map in CARLA
+
+3/31/2022 3:04:10 PM: 
+```
+The CARLA server uses the wrong map: Town10HD_Opt
+```
+3/31/2022 3:13:36 PM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Neil
+Traceback (most recent call last):
+  File "scenario_runner.py", line 609, in main
+    result = scenario_runner.run()
+  File "scenario_runner.py", line 513, in run
+    result = self._run_scenarios()
+  File "scenario_runner.py", line 453, in _run_scenarios
+    result = self._load_and_run_scenario(config)
+  File "scenario_runner.py", line 357, in _load_and_run_scenario
+    if not self._load_and_wait_for_world(config.town, config.ego_vehicles):
+  File "scenario_runner.py", line 309, in _load_and_wait_for_world
+    print(client.get_available_maps())
+NameError: name 'client' is not defined
+```
+3/31/2022 3:17:46 PM:
+```
+print(client.get_available_maps())
+```
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+['/Game/Carla/Maps/Town10HD', '/Game/Carla/Maps/Town04_Opt', '/Game/Carla/Maps/Town01_Opt', '/Game/Carla/Maps/Town01', '/Game/Carla/Maps/Town02', '/Game/Carla/Maps/Town04', '/Game/Carla/Maps/Town03_Opt', '/Game/Carla/Maps/Town10HD_Opt', '/Game/Carla/Maps/Town02_Opt', '/Game/Carla/Maps/Town05_Opt', '/Game/Carla/Maps/Town03', '/Game/Carla/Maps/Town05']
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 398, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 370
+ERROR: failed to destroy actor 370 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
