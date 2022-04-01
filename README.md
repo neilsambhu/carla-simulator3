@@ -550,3 +550,12 @@ Destroying ego vehicle 49
 ERROR: failed to destroy actor 49 : unable to destroy actor: not found 
 No more scenarios .... Exiting
 ```
+4/1/2022 11:55:24 AM: 
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml 
+The CARLA server uses the wrong map: Town10HD_Opt
+This scenario requires to use map: Town01
+The CARLA server uses the wrong map: Town10HD_Opt
+This scenario requires to use map: Town01
+No more scenarios .... Exiting
+```
