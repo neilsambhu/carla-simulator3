@@ -506,3 +506,5 @@ No more scenarios .... Exiting
 4/1/2022 12:13:29 AM: TODO:find "Game/Carla/Maps" directory
 
 4/1/2022 12:24:57 AM: maybe use the following directory for Town01: /data/data1/GitHub/carla-simulator3/CARLA_0.9.13/CarlaUE4/Content/Carla/Maps. Relevant file for Town01 should be Maps/Town01.\*; I don't know the correct file extention to use of the availabile Town01.* files.
+
+4/1/2022 12:34:51 AM: TODO: find config file; how to change town in config file

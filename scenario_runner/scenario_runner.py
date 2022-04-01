@@ -305,8 +305,9 @@ class ScenarioRunner(object):
 
         if self._args.reloadWorld:
             self.world = self.client.load_world(town)
-            print(os.getcwd())
-            print(self.client.get_available_maps())
+            # 3/31/2022 3:17:46 PM:
+            # print(os.getcwd())
+            # print(self.client.get_available_maps())
             # print(self.client.define_maps())
         else:
             # if the world should not be reloaded, wait at least until all ego vehicles are ready
