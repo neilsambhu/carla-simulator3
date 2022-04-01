@@ -503,3 +503,4 @@ Destroying ego vehicle 370
 ERROR: failed to destroy actor 370 : unable to destroy actor: not found 
 No more scenarios .... Exiting
 ```
+4/1/2022 12:13:29 AM: TODO:find "Game/Carla/Maps" directory
