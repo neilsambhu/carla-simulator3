@@ -510,3 +510,43 @@ No more scenarios .... Exiting
 4/1/2022 12:34:51 AM: TODO: find config file; how to change town in config file
 
 4/1/2022 12:39:35 AM: (re: find config file) try to use xml from "3/31/2022 11:32:48 AM" tag
+
+4/1/2022 11:49:16 AM: changed FollowLeadingVehicle.xml map from Town01 to Town10HD_Opt
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 400, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 47
+ERROR: failed to destroy actor 47 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 400, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 49
+ERROR: failed to destroy actor 49 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
