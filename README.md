@@ -710,3 +710,39 @@ ERROR: failed to destroy actor 378 : unable to destroy actor: not found
 No more scenarios .... Exiting
 ```
 4/1/2022 11:22:20 PM: Town01 loads by using "--configFile srunner/examples/FollowLeadingVehicle.xml"; this is visible when manual_control.py is after scenario_runner.py
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml
+_load_and_run_scenario Town01
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 401, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 380
+ERROR: failed to destroy actor 380 : unable to destroy actor: not found 
+_load_and_run_scenario Town01
+Preparing scenario: FollowLeadingVehicle_1
+The scenario cannot be loaded
+Traceback (most recent call last):
+  File "scenario_runner.py", line 401, in _load_and_run_scenario
+    self._args.debug)
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 78, in __init__
+    criteria_enable=criteria_enable)
+  File "/data/data1/GitHub/carla-simulator3/scenario_runner/srunner/scenarios/basic_scenario.py", line 64, in __init__
+    behavior = self._create_behavior()
+  File ".//srunner/scenarios/follow_leading_vehicle.py", line 113, in _create_behavior
+    policy=py_trees.common.ParallelPolicy.SUCCESS_ON_ONE)
+AttributeError: type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+type object 'ParallelPolicy' has no attribute 'SUCCESS_ON_ONE'
+Destroying ego vehicle 382
+ERROR: failed to destroy actor 382 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
