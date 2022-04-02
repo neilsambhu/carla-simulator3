@@ -356,7 +356,7 @@ class ScenarioRunner(object):
         Load and run the scenario given by config
         """
         result = False
-        print('_load_and_run_scenario', config.town)
+        # print('_load_and_run_scenario', config.town)
         if not self._load_and_wait_for_world(config.town, config.ego_vehicles):
             self._cleanup()
             return False
