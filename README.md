@@ -751,3 +751,18 @@ No more scenarios .... Exiting
 4/1/2022 11:42:22 PM: TODO: log and criteria files: scenario_runner.py creates log file (empty) and does not create criteria file
 
 4/1/2022 11:44:44 PM: TODO: backup carla-simulator3 environment to yml file
+
+4/4/2022 4:28:20 PM: back up environment to carla-simulator3-2022-04-04-1626.yml
+
+4/4/2022 4:33:57 PM: log and criteria files: https://carla-scenariorunner.readthedocs.io/en/latest/getting_started/ > check CARLA_ROOT added to Python path
+
+4/4/2022 4:49:24 PM: scratchpad:
+```
+export CARLA_ROOT=/data/data1/GitHub/carla-simulator3
+export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg:${CARLA_ROOT}/PythonAPI/carla/agents:${CARLA_ROOT}/PythonAPI/carla
+
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ printenv PYTHONPATH
+:/data/data1/GitHub/carla-simulator3/PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg
+:/data/data1/GitHub/carla-simulator3/PythonAPI/carla/agents
+:/data/data1/GitHub/carla-simulator3/PythonAPI/carla
+```
