@@ -766,3 +766,20 @@ export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.13-py
 :/data/data1/GitHub/carla-simulator3/PythonAPI/carla/agents
 :/data/data1/GitHub/carla-simulator3/PythonAPI/carla
 ```
+4/4/2022 4:55:44 PM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 197
+ERROR: failed to destroy actor 197 : unable to destroy actor: not found 
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 379
+ERROR: failed to destroy actor 379 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
