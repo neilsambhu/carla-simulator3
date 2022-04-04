@@ -748,4 +748,6 @@ No more scenarios .... Exiting
 ```
 4/1/2022 11:35:49 PM: https://github.com/carla-simulator/scenario_runner/issues/23 > downgrade py-trees 2.1.6 to 0.8.3
 
-4/1/2022 11:42:22 PM: log and criteria files: scenario_runner.py creates log file (empty) and does not create criteria file
+4/1/2022 11:42:22 PM: TODO: log and criteria files: scenario_runner.py creates log file (empty) and does not create criteria file
+
+4/1/2022 11:44:44 PM: TODO: backup carla-simulator3 environment to yml file
