@@ -783,3 +783,8 @@ Destroying ego vehicle 379
 ERROR: failed to destroy actor 379 : unable to destroy actor: not found 
 No more scenarios .... Exiting
 ```
+4/5/2022 1:19:11 AM: "ERROR: failed to destroy actor 197 : unable to destroy actor: not found" > https://github.com/carla-simulator/scenario_runner/issues/852 > error is more like a warning
+
+4/5/2022 1:21:25 AM: TODO: log and criteria files: scenario_runner.py creates log file (empty) and does not create criteria file: 
+
+https://carla-scenariorunner.readthedocs.io/en/latest/metrics_module/#how-to-use-the-metrics-module: 1. A CARLA recording (.log) — Contains simulation data per frame. To know more about this, read the recorder docs.: https://carla.readthedocs.io/en/latest/adv_recorder/
