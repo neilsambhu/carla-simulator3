@@ -15,3 +15,6 @@
 !./scenario_runner/srunner/scenariomanager/scenarioatomics/atomic_behaviors.py
 
 # https://www.atlassian.com/git/tutorials/saving-changes/gitignore > "you can not negate a file that is ignored due to a pattern matching a directory"
+
+!CARLA_0.9.13/*
+!CARLA_0.9.13/*.py

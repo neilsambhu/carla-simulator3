@@ -788,3 +788,8 @@ No more scenarios .... Exiting
 4/5/2022 1:21:25 AM: TODO: log and criteria files: scenario_runner.py creates log file (empty) and does not create criteria file: 
 
 https://carla-scenariorunner.readthedocs.io/en/latest/metrics_module/#how-to-use-the-metrics-module: 1. A CARLA recording (.log) — Contains simulation data per frame. To know more about this, read the recorder docs.: https://carla.readthedocs.io/en/latest/adv_recorder/
+
+4/5/2022 11:41:54 AM: TODO: 
+https://carla.readthedocs.io/en/0.9.13/adv_recorder/ > "client.start_recorder("/home/carla/recording01.log")"
+
+4/5/2022 11:43:16 AM: TODO: change .gitignore to include all *.py files.
