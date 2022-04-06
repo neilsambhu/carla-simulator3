@@ -407,12 +407,19 @@ class ScenarioRunner(object):
             return False
 
         try:
-            print('Neil got here')
+            bVerbose = True
+            if bVerbose:
+                print('Neil got here')
             if self._args.record:
                 recorder_name = "{}/{}/{}.log".format(
                     os.getenv('SCENARIO_RUNNER_ROOT', "./"), self._args.record, config.name)
+                if bVerbose:
+                    # get working directory
+                    # TODO
+                    print(recorder_name)
                 self.client.start_recorder(recorder_name, True)
-
+            if bVerbose:
+                print('Neil left here')
             # Load scenario and run it
             self.manager.load_scenario(scenario, self.agent_instance)
             self.manager.run_scenario()
