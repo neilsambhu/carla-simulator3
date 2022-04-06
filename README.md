@@ -792,4 +792,6 @@ https://carla-scenariorunner.readthedocs.io/en/latest/metrics_module/#how-to-use
 4/5/2022 11:41:54 AM: TODO: 
 https://carla.readthedocs.io/en/0.9.13/adv_recorder/ > "client.start_recorder("/home/carla/recording01.log")"
 
-4/5/2022 11:43:16 AM: TODO: change .gitignore to include all *.py files.
+4/5/2022 11:43:16 AM: TODO: change .gitignore to include all \*.py files.
+
+4/6/2022 12:26:41 PM: pause: "change .gitignore to include all \*.py files."
