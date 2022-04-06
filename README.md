@@ -919,3 +919,4 @@ No more scenarios .... Exiting
 TODO: compare json log files of FollowLeadingVehicleWithObstacle_1 to FollowLeadingVehicle_1; both should appear empty
 
      True
+4/6/2022 1:02:15 PM: log files are the same and appear empty.
