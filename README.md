@@ -901,3 +901,20 @@ Destroying ego vehicle 1435
 ERROR: failed to destroy actor 1435 : unable to destroy actor: not found 
 No more scenarios .... Exiting
 ```
+4/6/2022 12:57:08 PM: change scenario to FollowLeadingVehicleWithObstacle_1:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicleWithObstacle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicleWithObstacle_1
+Neil got here
+current directory /data/data1/GitHub/carla-simulator3/scenario_runner
+recorder_name .//recording_files/FollowLeadingVehicleWithObstacle_1.log
+Neil left here
+ScenarioManager: Running scenario FollowLeadingVehicleWithObstacle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 1611
+ERROR: failed to destroy actor 1611 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+TODO: compare json log files of FollowLeadingVehicleWithObstacle_1 to FollowLeadingVehicle_1; both should appear empty
+     True
