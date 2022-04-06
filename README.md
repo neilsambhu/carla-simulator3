@@ -827,3 +827,48 @@ Destroying ego vehicle 907
 ERROR: failed to destroy actor 907 : unable to destroy actor: not found 
 No more scenarios .... Exiting
 ```
+4/6/2022 12:43:17 PM: run with --output flag:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld --output
+Preparing scenario: FollowLeadingVehicle_1
+Neil got here
+ScenarioManager: Running scenario FollowVehicle
+
+ ======= Results of Scenario: FollowVehicle ---- TIMEOUT =======
+
+ > Ego vehicles:
+Actor(id=1083, type=vehicle.lincoln.mkz_2017); 
+
+ > Other actors:
+Actor(id=1084, type=vehicle.nissan.patrol); 
+
+ > Simulation Information
+╒═════════════════════════════════╤═════════════════════╕
+│ Start Time                      │ 2022-04-06 12:43:48 │
+├─────────────────────────────────┼─────────────────────┤
+│ End Time                        │ 2022-04-06 12:44:48 │
+├─────────────────────────────────┼─────────────────────┤
+│ Duration (System Time)          │ 60.02s              │
+├─────────────────────────────────┼─────────────────────┤
+│ Duration (Game Time)            │ 60.01s              │
+├─────────────────────────────────┼─────────────────────┤
+│ Ratio (System Time / Game Time) │ 1.0s                │
+╘═════════════════════════════════╧═════════════════════╛
+
+ > Criteria Information
+╒════════════════════════════╤══════════════════════╤═════════╤══════════════╤════════════════╕
+│ Actor                      │ Criterion            │ Result  │ Actual Value │ Expected Value │
+├────────────────────────────┼──────────────────────┼─────────┼──────────────┼────────────────┤
+│ lincoln.mkz_2017 (id=1083) │ CollisionTest (Req.) │ SUCCESS │ 0            │ 0              │
+├────────────────────────────┼──────────────────────┼─────────┼──────────────┼────────────────┤
+│                            │ Timeout (Req.)       │ FAILURE │ 60.01        │ 60             │
+├────────────────────────────┼──────────────────────┼─────────┼──────────────┼────────────────┤
+│                            │ GLOBAL RESULT        │ TIMEOUT │              │                │
+╘════════════════════════════╧══════════════════════╧═════════╧══════════════╧════════════════╛
+ ===============================================================
+
+Not all scenario tests were successful
+Destroying ego vehicle 1083
+ERROR: failed to destroy actor 1083 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
