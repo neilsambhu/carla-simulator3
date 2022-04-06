@@ -795,3 +795,35 @@ https://carla.readthedocs.io/en/0.9.13/adv_recorder/ > "client.start_recorder("/
 4/5/2022 11:43:16 AM: TODO: change .gitignore to include all \*.py files.
 
 4/6/2022 12:26:41 PM: pause: "change .gitignore to include all \*.py files."
+
+4/6/2022 12:35:41 PM: specify config file:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+Neil got here
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 555
+ERROR: failed to destroy actor 555 : unable to destroy actor: not found 
+Preparing scenario: FollowLeadingVehicle_1
+Neil got here
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 731
+ERROR: failed to destroy actor 731 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+4/6/2022 12:37:35 PM: omit config file:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+Neil got here
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 907
+ERROR: failed to destroy actor 907 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
