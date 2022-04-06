@@ -414,9 +414,9 @@ class ScenarioRunner(object):
                 recorder_name = "{}/{}/{}.log".format(
                     os.getenv('SCENARIO_RUNNER_ROOT', "./"), self._args.record, config.name)
                 if bVerbose:
-                    # get working directory
-                    # TODO
-                    print(recorder_name)
+                    # get current directory
+                    print('current directory',os.getcwd())
+                    print('recorder_name',recorder_name)
                 self.client.start_recorder(recorder_name, True)
             if bVerbose:
                 print('Neil left here')
