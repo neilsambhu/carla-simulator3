@@ -917,4 +917,5 @@ ERROR: failed to destroy actor 1611 : unable to destroy actor: not found
 No more scenarios .... Exiting
 ```
 TODO: compare json log files of FollowLeadingVehicleWithObstacle_1 to FollowLeadingVehicle_1; both should appear empty
+
      True
