@@ -920,3 +920,25 @@ TODO: compare json log files of FollowLeadingVehicleWithObstacle_1 to FollowLead
 
      True
 4/6/2022 1:02:15 PM: log files are the same and appear empty.
+
+4/7/2022 1:01:00 PM: TODO: scenario_runner.py > follow writing to recorder_name (i.e. \*.log file)
+
+4/7/2022 1:08:06 PM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+Neil got here 1
+current directory /data/data1/GitHub/carla-simulator3/scenario_runner
+recorder_name .//recording_files/FollowLeadingVehicle_1.log
+Neil left here 1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Neil got here 2
+recorder_name .//recording_files/FollowLeadingVehicle_1.log
+Neil left here 2
+Destroying ego vehicle 374
+ERROR: failed to destroy actor 374 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+4/7/2022 1:16:44 PM: https://carla.readthedocs.io/en/0.9.13/adv_recorder/ > "To start recording there is only need for a file name. Using \, / or : characters in the file name will define it as an absolute path. If no path is detailed, the file will be saved in CarlaUE4/Saved." > No files in "CarlaUE4/Saved".

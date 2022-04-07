@@ -409,7 +409,7 @@ class ScenarioRunner(object):
         try:
             bVerbose = True
             if bVerbose:
-                print('Neil got here')
+                print('Neil got here 1')
             if self._args.record:
                 recorder_name = "{}/{}/{}.log".format(
                     os.getenv('SCENARIO_RUNNER_ROOT', "./"), self._args.record, config.name)
@@ -419,7 +419,7 @@ class ScenarioRunner(object):
                     print('recorder_name',recorder_name)
                 self.client.start_recorder(recorder_name, True)
             if bVerbose:
-                print('Neil left here')
+                print('Neil left here 1')
             # Load scenario and run it
             self.manager.load_scenario(scenario, self.agent_instance)
             self.manager.run_scenario()
@@ -429,9 +429,15 @@ class ScenarioRunner(object):
 
             # Remove all actors, stop the recorder and save all criterias (if needed)
             scenario.remove_all_actors()
+            if bVerbose:
+                print('Neil got here 2')
             if self._args.record:
                 self.client.stop_recorder()
+                if bVerbose:
+                    print('recorder_name',recorder_name)
                 self._record_criteria(self.manager.scenario.get_criteria(), recorder_name)
+            if bVerbose:
+                print('Neil left here 2')
 
             result = True
 
