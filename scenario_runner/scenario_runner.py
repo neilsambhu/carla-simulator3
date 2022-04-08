@@ -417,7 +417,8 @@ class ScenarioRunner(object):
                     # get current directory
                     print('current directory',os.getcwd())
                     print('recorder_name',recorder_name)
-                self.client.start_recorder(recorder_name, True)
+                # self.client.start_recorder(recorder_name, True)
+                self.client.start_recorder(recorder_name)
             if bVerbose:
                 print('Neil left here 1')
             # Load scenario and run it

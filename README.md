@@ -946,3 +946,11 @@ No more scenarios .... Exiting
 4/8/2022 11:21:18 AM: I can't follow the references of the recorder_name (i.e. \*.log file) easily; I'm going to try JSON instead. JSON is an empty file. Final answer 1: keep going on recorder_name (i.e. \*.log file) because the log file is not output after the scenario is run. Final answer 2: see how code writes the JSON file. I'm going to keep thinking about how to proceed. 
 
 4/8/2022 11:26:00 AM: (from previous) TODO:Final answer 1.
+
+4/8/2022 5:27 PM: try additional_data argument in start_recorder function.
+
+4/8/2022 5:28 PM: additional_data argument already in start_recorder function.
+
+4/8/2022 5:33 PM: remove additional_data argument; log file does not change
+
+4/8/2022 7:00 PM: pause "follow the references of the recorder_name (i.e. \*.log file)"; problem: I can't find the function definition of "start_recorder". TODO: final answer 2: see how code writes JSON file.
