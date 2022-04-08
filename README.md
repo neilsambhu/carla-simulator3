@@ -954,3 +954,5 @@ No more scenarios .... Exiting
 4/8/2022 5:33 PM: remove additional_data argument; log file does not change
 
 4/8/2022 7:00 PM: pause "follow the references of the recorder_name (i.e. \*.log file)"; problem: I can't find the function definition of "start_recorder". TODO: final answer 2: see how code writes JSON file.
+
+4/8/2022 7:29 PM: potentially relevant to solving the \*.log and \*.json files issue from scenario_runner.py: --agentConfig 
