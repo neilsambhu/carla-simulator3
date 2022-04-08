@@ -942,3 +942,7 @@ ERROR: failed to destroy actor 374 : unable to destroy actor: not found
 No more scenarios .... Exiting
 ```
 4/7/2022 1:16:44 PM: https://carla.readthedocs.io/en/0.9.13/adv_recorder/ > "To start recording there is only need for a file name. Using \, / or : characters in the file name will define it as an absolute path. If no path is detailed, the file will be saved in CarlaUE4/Saved." > No files in "CarlaUE4/Saved".
+
+4/8/2022 11:21:18 AM: I can't follow the references of the recorder_name (i.e. \*.log file) easily; I'm going to try JSON instead. JSON is an empty file. Final answer 1: keep going on recorder_name (i.e. \*.log file) because the log file is not output after the scenario is run. Final answer 2: see how code writes the JSON file. I'm going to keep thinking about how to proceed. 
+
+4/8/2022 11:26:00 AM: (from previous) TODO:Final answer 1.
