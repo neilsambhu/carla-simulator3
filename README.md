@@ -998,3 +998,11 @@ No more scenarios .... Exiting
 4/11/2022 2:41:11 PM: It's not obvious, but maybe there is something useful in CARLA_0.9.13/PythonAPI/examples/start_recording.py.
 
 4/11/2022 2:45:52 PM: I can't find the stop_recorder function definition in start_recording.py. 
+
+4/11/2022 5:35:14 PM: Google "CARLA no log file"
+
+4/11/2022 5:41:05 PM: maybe I can try replicating https://github.com/carla-simulator/carla/discussions/4143: try start_recording.py instead of using scenario_runner.py. No clear solution in aforementioned link.
+
+4/11/2022 5:57:27 PM: Google "CARLA Not all scenario tests were successful"
+
+4/11/2022 5:58:29 PM: https://github.com/carla-simulator/scenario_runner/issues/566 > "By default you have to run the scenario in one terminal and the manual_control (or any agent) in another."
