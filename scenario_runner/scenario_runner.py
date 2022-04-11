@@ -272,8 +272,15 @@ class ScenarioRunner(object):
         dumps them into a file. This will be used by the metrics manager,
         in case the user wants specific information about the criterias.
         """
+        bVerbose = True
+        if bVerbose:
+            print('Neil got here 1')
+        
         file_name = name[:-4] + ".json"
-
+        if bVerbose:
+            print('file_name',file_name)
+        if bVerbose:
+            print('Neil left here 1')
         # Filter the attributes that aren't JSON serializable
         with open('temp.json', 'w', encoding='utf-8') as fp:
 
@@ -296,6 +303,13 @@ class ScenarioRunner(object):
 
         # Save the criteria dictionary into a .json file
         with open(file_name, 'w', encoding='utf-8') as fp:
+            if bVerbose:
+                print('Neil got here 2')
+            if bVerbose:
+                print('criteria_dict',criteria_dict)
+            if bVerbose:
+                print('Neil left here 2')
+
             json.dump(criteria_dict, fp, sort_keys=False, indent=4)
 
     def _load_and_wait_for_world(self, town, ego_vehicles=None):
@@ -407,7 +421,7 @@ class ScenarioRunner(object):
             return False
 
         try:
-            bVerbose = True
+            bVerbose = False
             if bVerbose:
                 print('Neil got here 1')
             if self._args.record:

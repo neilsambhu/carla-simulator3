@@ -956,3 +956,37 @@ No more scenarios .... Exiting
 4/8/2022 7:00 PM: pause "follow the references of the recorder_name (i.e. \*.log file)"; problem: I can't find the function definition of "start_recorder". TODO: final answer 2: see how code writes JSON file.
 
 4/8/2022 7:29 PM: potentially relevant to solving the \*.log and \*.json files issue from scenario_runner.py: --agentConfig 
+
+4/11/2022 9:20:08 AM: start debug write to \*.json
+
+4/11/2022 9:23:06 AM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Neil got here 1
+file_name .//recording_files/FollowLeadingVehicle_1.json
+Neil left here 1
+Destroying ego vehicle 197
+ERROR: failed to destroy actor 197 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 
+```
+FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Neil got here 1
+file_name .//recording_files/FollowLeadingVehicle_1.json
+Neil left here 1
+Neil got here 2
+criteria_dict {'CollisionTest': {'children': [], 'feedback_message': '', 'blackbox_level': <BlackBoxLevel.NOT_A_BLACKBOX: 4>, '_terminate_on_failure': False, 'test_status': 'SUCCESS', 'expected_value_success': 0, 'expected_value_acceptable': None, 'actual_value': 0, 'optional': False, 'list_traffic_events': [], '_collision_sensor': None, 'other_actor': None, 'other_actor_type': None, 'registered_collisions': [], 'last_id': None, 'collision_time': None, 'terminate_on_failure': False}}
+Neil left here 2
+Destroying ego vehicle 197
+ERROR: failed to destroy actor 197 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
