@@ -272,7 +272,7 @@ class ScenarioRunner(object):
         dumps them into a file. This will be used by the metrics manager,
         in case the user wants specific information about the criterias.
         """
-        bVerbose = True
+        bVerbose = False
         if bVerbose:
             print('Neil got here 1')
         

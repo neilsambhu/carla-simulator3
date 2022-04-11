@@ -991,3 +991,10 @@ Destroying ego vehicle 197
 ERROR: failed to destroy actor 197 : unable to destroy actor: not found 
 No more scenarios .... Exiting
 ```
+4/11/2022 2:19:08 PM: I understand the flow of how scenario_runner.py writes the criteria to a JSON. I don't understand why this file has blank records. I'm going back to the \*.log file.
+
+4/11/2022 2:37:22 PM: I can't find the function definition of scenario_runner.py > self.client.start_recorder(recorder_name). I'm going to look in scenario_runner.py > self.client.stop_recorder() to see if there's a function definition. 
+
+4/11/2022 2:41:11 PM: It's not obvious, but maybe there is something useful in CARLA_0.9.13/PythonAPI/examples/start_recording.py.
+
+4/11/2022 2:45:52 PM: I can't find the stop_recorder function definition in start_recording.py. 
