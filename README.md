@@ -1008,6 +1008,7 @@ No more scenarios .... Exiting
 4/11/2022 5:58:29 PM: https://github.com/carla-simulator/scenario_runner/issues/566 > "By default you have to run the scenario in one terminal and the manual_control (or any agent) in another."
 
 4/11/2022 6:01:11 PM: if "manual_control" makes \*.log and \*.json work, no need to post the following at https://github.com/carla-simulator/carla/discussions/4143:
+
 I am using CARLA 0.9.13 on Pop!\_OS 21.10 (based on Ubuntu 21.10). Repository: https://github.com/neilsambhu/carla-simulator3
 
 I don't have any \*.log file as output to hard disk. I am also using the FollowLeadingVehicle_1 scenario. I know the "EROR: failed to destroy actor..." message is more like a warning (https://github.com/carla-simulator/scenario_runner/issues/852).
