@@ -972,7 +972,7 @@ Neil left here 1
 Destroying ego vehicle 197
 ERROR: failed to destroy actor 197 : unable to destroy actor: not found 
 No more scenarios .... Exiting
-
+```
 4/11/2022 2:03:10 PM:
 ```
 (carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 
