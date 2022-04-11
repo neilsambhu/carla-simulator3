@@ -1006,3 +1006,44 @@ No more scenarios .... Exiting
 4/11/2022 5:57:27 PM: Google "CARLA Not all scenario tests were successful"
 
 4/11/2022 5:58:29 PM: https://github.com/carla-simulator/scenario_runner/issues/566 > "By default you have to run the scenario in one terminal and the manual_control (or any agent) in another."
+
+4/11/2022 6:01:11 PM: if "manual_control" makes \*.log and \*.json work, no need to post the following at https://github.com/carla-simulator/carla/discussions/4143:
+I am using CARLA 0.9.13 on Pop!\_OS 21.10 (based on Ubuntu 21.10). Repository: https://github.com/neilsambhu/carla-simulator3
+
+I don't have any \*.log file as output to hard disk. I am also using the FollowLeadingVehicle_1 scenario. I know the "EROR: failed to destroy actor..." message is more like a warning (https://github.com/carla-simulator/scenario_runner/issues/852).
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+Neil got here 1
+current directory /data/data1/GitHub/carla-simulator3/scenario_runner
+recorder_name .//recording_files/FollowLeadingVehicle_1.log
+Neil left here 1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Neil got here 2
+recorder_name .//recording_files/FollowLeadingVehicle_1.log
+Neil left here 2
+Destroying ego vehicle 374
+ERROR: failed to destroy actor 374 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+
+Similarly, my \*.json output is filled with blank or null values:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 
+FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Neil got here 1
+file_name .//recording_files/FollowLeadingVehicle_1.json
+Neil left here 1
+Neil got here 2
+criteria_dict {'CollisionTest': {'children': [], 'feedback_message': '', 'blackbox_level': <BlackBoxLevel.NOT_A_BLACKBOX: 4>, '_terminate_on_failure': False, 'test_status': 'SUCCESS', 'expected_value_success': 0, 'expected_value_acceptable': None, 'actual_value': 0, 'optional': False, 'list_traffic_events': [], '_collision_sensor': None, 'other_actor': None, 'other_actor_type': None, 'registered_collisions': [], 'last_id': None, 'collision_time': None, 'terminate_on_failure': False}}
+Neil left here 2
+Destroying ego vehicle 197
+ERROR: failed to destroy actor 197 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
