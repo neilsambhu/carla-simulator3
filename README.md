@@ -1048,3 +1048,89 @@ Destroying ego vehicle 197
 ERROR: failed to destroy actor 197 : unable to destroy actor: not found 
 No more scenarios .... Exiting
 ```
+4/11/2022 6:10:01 PM: I tried using manual_control.py to prevent the "Not all scenario tests were successful" message (https://github.com/carla-simulator/scenario_runner/issues/566). Important: Town01 did not load; Town10HD_Opt remained.
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 203
+ERROR: failed to destroy actor 203 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+4/11/2022 6:13:10 PM: substitute "--scenario FollowLeadingVehicle_1" parameter for "--configFile srunner/examples/FollowLeadingVehicle.xml"
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --configFile srunner/examples/FollowLeadingVehicle.xml --record recording_files --reloadWorld
+Please specify either a scenario or use the route mode
+
+
+usage: scenario_runner.py [-h] [-v] [--host HOST] [--port PORT]
+                          [--timeout TIMEOUT]
+                          [--trafficManagerPort TRAFFICMANAGERPORT]
+                          [--trafficManagerSeed TRAFFICMANAGERSEED] [--sync]
+                          [--list] [--scenario SCENARIO]
+                          [--openscenario OPENSCENARIO]
+                          [--openscenarioparams OPENSCENARIOPARAMS]
+                          [--route ROUTE [ROUTE ...]] [--agent AGENT]
+                          [--agentConfig AGENTCONFIG] [--output] [--file]
+                          [--junit] [--json] [--outputDir OUTPUTDIR]
+                          [--configFile CONFIGFILE]
+                          [--additionalScenario ADDITIONALSCENARIO] [--debug]
+                          [--reloadWorld] [--record RECORD] [--randomize]
+                          [--repetitions REPETITIONS] [--waitForEgo]
+
+CARLA Scenario Runner: Setup, Run and Evaluate scenarios using CARLA
+Current version: 0.9.13
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+  --host HOST           IP of the host server (default: localhost)
+  --port PORT           TCP port to listen to (default: 2000)
+  --timeout TIMEOUT     Set the CARLA client timeout value in seconds
+  --trafficManagerPort TRAFFICMANAGERPORT
+                        Port to use for the TrafficManager (default: 8000)
+  --trafficManagerSeed TRAFFICMANAGERSEED
+                        Seed used by the TrafficManager (default: 0)
+  --sync                Forces the simulation to run synchronously
+  --list                List all supported scenarios and exit
+  --scenario SCENARIO   Name of the scenario to be executed. Use the preposition 'group:' to run all scenarios of one class, e.g. ControlLoss or FollowLeadingVehicle
+  --openscenario OPENSCENARIO
+                        Provide an OpenSCENARIO definition
+  --openscenarioparams OPENSCENARIOPARAMS
+                        Overwrited for OpenSCENARIO ParameterDeclaration
+  --route ROUTE [ROUTE ...]
+                        Run a route as a scenario (input: (route_file,scenario_file,[route id]))
+  --agent AGENT         Agent used to execute the scenario. Currently only compatible with route-based scenarios.
+  --agentConfig AGENTCONFIG
+                        Path to Agent's configuration file
+  --output              Provide results on stdout
+  --file                Write results into a txt file
+  --junit               Write results into a junit file
+  --json                Write results into a JSON file
+  --outputDir OUTPUTDIR
+                        Directory for output files (default: this directory)
+  --configFile CONFIGFILE
+                        Provide an additional scenario configuration file (*.xml)
+  --additionalScenario ADDITIONALSCENARIO
+                        Provide additional scenario implementations (*.py)
+  --debug               Run with debug output
+  --reloadWorld         Reload the CARLA world before starting a scenario (default=True)
+  --record RECORD       Path were the files will be saved, relative to SCENARIO_RUNNER_ROOT.
+                        Activates the CARLA recording feature and saves to file all the criteria information.
+  --randomize           Scenario parameters are randomized
+  --repetitions REPETITIONS
+                        Number of scenario executions
+  --waitForEgo          Connect the scenario to an existing ego vehicle
+```
+4/11/2022 6:16:35 PM: try both xml and scenario: Town01 loads.
+
+4/11/2022 6:21:41 PM: the following loads Town01 on CarlaUE4 window but not pygame window:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml --reloadWorld
+```
+4/11/2022 6:23:57 PM: pygame window will not change to Town01, even when scenario_runner.py is run a second time (i.e. attempt to reload the world twice). Potential error: ./CarlaUE4.sh shows the following error with various numbers:
+```
+ERROR: Invalid session: no stream available with id 5
+```
