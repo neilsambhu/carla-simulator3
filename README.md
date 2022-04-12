@@ -1134,6 +1134,24 @@ optional arguments:
 ```
 ERROR: Invalid session: no stream available with id 5
 ```
-4/12/2022 12:23:32 AM: potential solution to "ERROR Invalid session": https://github.com/carla-simulator/carla/issues/1632 > specify another port by --carla-world-port=3000
+4/12/2022 12:23:32 AM: potential solution to "ERROR: Invalid session": https://github.com/carla-simulator/carla/issues/1632 > specify another port by --carla-world-port=3000
 
 4/12/2022 12:27:32 AM: tag from 4/1/2022 12:02:12 PM: manual_control.py shows Town01. I'll try restarting SAMBHU19.
+
+4/12/2022 12:41:29 AM: manual_control.py still shows Town10HD_Opt. CarlaUE4.sh outputs "ERROR: Invalid session". \*.json is still filled with blank values.
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --configFile srunner/examples/FollowLeadingVehicle.xml --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 381
+ERROR: failed to destroy actor 381 : unable to destroy actor: not found 
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 557
+ERROR: failed to destroy actor 557 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
