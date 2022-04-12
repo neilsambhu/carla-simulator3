@@ -1155,3 +1155,62 @@ Destroying ego vehicle 557
 ERROR: failed to destroy actor 557 : unable to destroy actor: not found 
 No more scenarios .... Exiting
 ```
+4/12/2022 12:46:51 AM:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Destroying ego vehicle 1085
+ERROR: failed to destroy actor 1085 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+4/12/2022 12:54:56 AM: adding "--carla-world-port=3000" as a parameter to CarlaUE4.sh does not solve the issue. I'm going to try "-carla-streaming-port=0".
+
+4/12/2022 1:00:14 AM: I can't get Town01 to show up on manual_control.py. I'm going to follow through with the listing from 4/11/2022 6:01:11 PM and make a post on CARLA github discussion (https://github.com/carla-simulator/carla/discussions/4143 ):
+
+I am using CARLA 0.9.13 on Pop!\_OS 21.10 (based on Ubuntu 21.10). Repository: https://github.com/neilsambhu/carla-simulator3
+
+I don't have any \*.log file as output to hard disk. I am also using the FollowLeadingVehicle_1 scenario. I know the "ERROR: failed to destroy actor..." message is more like a warning (https://github.com/carla-simulator/scenario_runner/issues/852).
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+Neil got here 1
+current directory /data/data1/GitHub/carla-simulator3/scenario_runner
+recorder_name .//recording_files/FollowLeadingVehicle_1.log
+Neil left here 1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Neil got here 2
+recorder_name .//recording_files/FollowLeadingVehicle_1.log
+Neil left here 2
+Destroying ego vehicle 374
+ERROR: failed to destroy actor 374 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+
+Similarly, my \*.json output is filled with blank or null values:
+```
+(carla-simulator3) nsambhu@SAMBHU19:/data/data1/GitHub/carla-simulator3/scenario_runner$ python scenario_runner.py --scenario 
+FollowLeadingVehicle_1 --record recording_files --reloadWorld
+Preparing scenario: FollowLeadingVehicle_1
+ScenarioManager: Running scenario FollowVehicle
+Not all scenario tests were successful
+Please run with --output for further information
+Neil got here 1
+file_name .//recording_files/FollowLeadingVehicle_1.json
+Neil left here 1
+Neil got here 2
+criteria_dict {'CollisionTest': {'children': [], 'feedback_message': '', 'blackbox_level': <BlackBoxLevel.NOT_A_BLACKBOX: 4>, '_terminate_on_failure': False, 'test_status': 'SUCCESS', 'expected_value_success': 0, 'expected_value_acceptable': None, 'actual_value': 0, 'optional': False, 'list_traffic_events': [], '_collision_sensor': None, 'other_actor': None, 'other_actor_type': None, 'registered_collisions': [], 'last_id': None, 'collision_time': None, 'terminate_on_failure': False}}
+Neil left here 2
+Destroying ego vehicle 197
+ERROR: failed to destroy actor 197 : unable to destroy actor: not found 
+No more scenarios .... Exiting
+```
+Through the debugging process (after 4/11/2022 6:01:11 PM on https://github.com/neilsambhu/carla-simulator3 ), (1) CarlaUE4.sh will show Town01 and (2) manual_control.py will show Town10HD_Opt. I have --reloadWorld parameter when calling scenario_runner.py, and I have not changed any of the default port. 
+
+Additionally, CarlaUE4.sh outputs "ERROR: Invalid session: no stream available with id [integer]". I tried to resolve this issue by adding parameters when calling CarlaUE4.sh
+
+I assume (1) the "ERROR: Invalid session" is connected to (2) the Town01 not loading in manual_control.py: manual_control.py to prevent the "Not all scenario tests were successful" message (https://github.com/carla-simulator/scenario_runner/issues/566#issuecomment-645852385 ), which is connected to (3) lack of \*.log and \*.json files In my "recording_files" directory.
