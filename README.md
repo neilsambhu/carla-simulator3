@@ -1214,3 +1214,5 @@ Through the debugging process (after 4/11/2022 6:01:11 PM on https://github.com/
 Additionally, CarlaUE4.sh outputs "ERROR: Invalid session: no stream available with id [integer]". I tried to resolve this issue by adding parameters when calling CarlaUE4.sh
 
 I assume (1) the "ERROR: Invalid session" is connected to (2) the Town01 not loading in manual_control.py: manual_control.py to prevent the "Not all scenario tests were successful" message (https://github.com/carla-simulator/scenario_runner/issues/566#issuecomment-645852385 ), which is connected to (3) lack of \*.log and \*.json files In my "recording_files" directory. Chronologically, I found these issues in the order 3, 2, 1.
+
+4/12/2022 3:00:42 PM: potential issue: https://github.com/carla-simulator/scenario_runner/blob/master/Docs/getting_scenariorunner.md > "If the CARLA being used is a build from source, download ScenarioRunner from source. If the CARLA being used is a package, download the corresponding version of ScenarioRunner."
