@@ -1134,3 +1134,6 @@ optional arguments:
 ```
 ERROR: Invalid session: no stream available with id 5
 ```
+4/12/2022 12:23:32 AM: potential solution to "ERROR Invalid session": https://github.com/carla-simulator/carla/issues/1632 > specify another port by --carla-world-port=3000
+
+4/12/2022 12:27:32 AM: tag from 4/1/2022 12:02:12 PM: manual_control.py shows Town01. I'll try restarting SAMBHU19.
