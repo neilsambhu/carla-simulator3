@@ -1209,7 +1209,7 @@ Destroying ego vehicle 197
 ERROR: failed to destroy actor 197 : unable to destroy actor: not found 
 No more scenarios .... Exiting
 ```
-Through the debugging process (after 4/11/2022 6:01:11 PM on https://github.com/neilsambhu/carla-simulator3 ), (1) CarlaUE4.sh will show Town01 and (2) manual_control.py will show Town10HD_Opt. I have --reloadWorld parameter when calling scenario_runner.py, and I have not changed any of the default port. 
+Through the debugging process (after 4/11/2022 6:01:11 PM on https://github.com/neilsambhu/carla-simulator3 ), (1) CarlaUE4.sh will show Town01 and (2) manual_control.py will show Town10HD_Opt. I have --reloadWorld parameter when calling scenario_runner.py, and I have not changed any of the default ports. 
 
 Additionally, CarlaUE4.sh outputs "ERROR: Invalid session: no stream available with id [integer]". I tried to resolve this issue by adding parameters when calling CarlaUE4.sh
 
