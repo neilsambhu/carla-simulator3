@@ -1217,4 +1217,4 @@ I assume (1) the "ERROR: Invalid session" is connected to (2) the Town01 not loa
 
 4/12/2022 3:00:42 PM: potential issue: https://github.com/carla-simulator/scenario_runner/blob/master/Docs/getting_scenariorunner.md > "If the CARLA being used is a build from source, download ScenarioRunner from source. If the CARLA being used is a package, download the corresponding version of ScenarioRunner."
 
-4/12/2022 3:11:14 PM: reinstall CARLA with Debian package
+4/12/2022 3:11:14 PM: reinstall CARLA with Debian package: https://github.com/neilsambhu/carla-simulator4
